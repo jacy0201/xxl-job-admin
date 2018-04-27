@@ -196,7 +196,7 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
         </profile>
-        <!-- 生产 -->
+        <!-- 生产 环境-->
         <profile>
             <id>pro</id>
             <properties>
