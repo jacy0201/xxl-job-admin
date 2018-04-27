@@ -227,4 +227,4 @@ local.properties
 # Project-level settings
 /.tgitconfig
 
-emucoo-api.ipr
+emucoo-job.ipr
