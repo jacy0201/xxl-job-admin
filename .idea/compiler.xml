@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="xxl-job-admin" target="1.8" />
+      <module name="xxl-job-admin" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
