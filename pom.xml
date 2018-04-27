@@ -163,46 +163,4 @@
 
     </dependencies>
 
-    <!-- 通过profile决定env, 根据env来试用不同的过滤文件来处理resources中的properties文件 -->
-    <build>
-        <filters><!--获得过滤使用的源文件，即有实际数据的地方-->
-            <filter>src/main/resources/xxl-job-admin-${env}.properties</filter>
-        </filters>
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <filtering>false</filtering>
-            </resource>
-            <resource>
-                <directory>src/main/resources</directory>
-                <filtering>true</filtering><!--是否使用过滤器-->
-                <includes>
-                    <include>
-                        *.properties
-                    </include>
-                </includes>
-            </resource>
-        </resources>
-    </build>
-    <!-- 打包的不同profile -->
-    <profiles>
-        <!-- 开发 -->
-        <profile>
-            <id>dev</id>
-            <properties>
-                <env>dev</env>
-            </properties>
-            <activation><!--默认激活-->
-                <activeByDefault>true</activeByDefault>
-            </activation>
-        </profile>
-        <!-- 生产 环境-->
-        <profile>
-            <id>pro</id>
-            <properties>
-                <env>pro</env>
-            </properties>
-        </profile>
-    </profiles>
-
 </project>
